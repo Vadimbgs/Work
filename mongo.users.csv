@@ -1,0 +1,8 @@
+_id,age,fullname,posts[0].title,posts[1].title,posts[0].text,posts[1].text,name
+68668fe676298cc05b9bcd51,,,,,,,
+6866900676298cc05b9bcd52,45,ilon mask,,,,,
+6866915276298cc05b9bcd53,28,vasya,,,,,
+6866915276298cc05b9bcd54,23,petya,javascript,mongo,js top,mongo database,
+6866915276298cc05b9bcd55,35,dima,,,,,
+6866915276298cc05b9bcd57,42,ulbi tv,,,,,
+6866b7de76298cc05b9bcd58,18,,,,,,nastya
