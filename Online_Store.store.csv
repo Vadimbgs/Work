@@ -1,0 +1,11 @@
+_id,name,role,workspace,permissions[0],permissions[1],permissions[2],permissions[3],createdAt,updatedAt,foreignKeys[0].name,foreignKeys[1].name,foreignKeys[0].id,parentId,isDeleted,foreignKeys[0]._id,foreignKeys[1]._id
+6868433281e9d497130b31ae,mainAdmin,mainAdmin,global,viewAllUsers,createAnyUser,editAnyUser,deleteAnyUser,2025-07-04T21:10:10.576Z,2025-07-04T21:10:10.576Z,adminTester,,someUniqueId1,,,,
+someUniqueId1,adminTester,admin,tester,viewOrganizationUsers,createOrganizationUser,editOrganizationUser,assignBasicPermission,2025-07-04T21:10:10.576Z,2025-07-04T21:10:10.576Z,mainAdmin,,,6868433281e9d497130b31ae,false,6868433281e9d497130b31ae,
+someUniqueId2,userTester,user,,viewOwnData,editOwnProfile,,,2025-07-04T21:10:10.576Z,2025-07-04T21:10:10.576Z,,,,someUniqueId1,false,,
+someUniqueId3,userTester1,user,,viewOwnData,editOwnProfile,,,2025-07-04T21:10:10.576Z,2025-07-04T21:10:10.576Z,,,,someUniqueId1,false,,
+someUniqueId4,adminCompanyA1,admin,admin,viewOwnCreatedUsers,editOwnCreatedUsers,assignRolePermissions,extendRolePermissions,2025-07-06T12:33:00.000Z,2025-07-06T12:33:00.000Z,mainAdmin,adminCompanyB1,,6868433281e9d49713b31ae,false,6868433281e9d49713b31ae,someUniqueId7
+someUniqueId5,userCompanyA1,user,,viewOwnData,editOwnProfile,,,2025-07-06T15:54:00.000Z,2025-07-06T15:54:00.000Z,,,,someUniqueId4,false,,
+someUniqueId6,userCompanyA2,user,,viewOwnData,editOwnProfile,,,2025-07-06T15:54:00.000Z,2025-07-06T15:54:00.000Z,,,,someUniqueId4,false,,
+someUniqueId7,adminCompanyB1,admin,admin,manageUserAccounts,modifyWorkspaceSettings,grantAdminAccess,revokeUserPermissions,2025-07-06T12:33:00.000Z,2025-07-06T12:33:00.000Z,mainAdmin,adminCompanyA1,,6868433281e9d49713b31ae,false,6868433281e9d49713b31ae,someUniqueId4
+someUniqueId8,userCompanyB1,user,,viewOwnData,editOwnProfile,,,2025-07-06T12:33:00.000Z,2025-07-06T12:33:00.000Z,,,,someUniqueId7,false,,
+someUniqueId9,userCompanyB2,user,,viewOwnData,editOwnProfile,,,2025-07-06T12:33:00.000Z,2025-07-06T12:33:00.000Z,,,,someUniqueId7,false,,
