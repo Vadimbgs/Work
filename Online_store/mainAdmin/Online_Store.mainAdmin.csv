@@ -1,0 +1,2 @@
+_id,name,role,workspace,permissions[0],permissions[1],permissions[2],permissions[3],isDeleted
+6868433281e9d497130b31ae,mainAdmin,mainAdmin,global,viewAllUsers,createAnyUser,editAnyUser,deleteAnyUser,false
