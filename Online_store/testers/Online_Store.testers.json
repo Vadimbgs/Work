@@ -1,0 +1,43 @@
+[{
+  "_id": "someUniqueId1",
+  "name": "adminTester",
+  "role": "admin",
+  "workspace": "admin",
+  "parentId": "6868433281e9d497130b31ae",
+  "permissions": [
+    "createAnyUser",
+    "editAnyUser",
+    "deleteAnyUser",
+    "viewOrganizationUsers",
+    "createOrganizationUser",
+    "editOrganizationUser",
+    "assignBasicPermission"
+  ],
+  "isDeleted": false
+},
+{
+  "_id": "someUniqueId2",
+  "name": "userTester",
+  "role": "user",
+  "workspace": "user",
+  "parentId": "someUniqueId1",
+  "permissions": [
+    "viewAllData",
+    "editAllProfiles",
+    "deleteData"
+  ],
+  "isDeleted": false
+},
+{
+  "_id": "someUniqueId3",
+  "name": "userTester1",
+  "role": "user",
+  "workspace": "user",
+  "parentId": "someUniqueId1",
+  "permissions": [
+    "viewAllData",
+    "editAllProfiles",
+    "deleteData"
+  ],
+  "isDeleted": false
+}]
