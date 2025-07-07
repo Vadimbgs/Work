@@ -1,0 +1,4 @@
+_id,name,role,workspace,parentId,permissions[0],permissions[1],permissions[2],permissions[3],permissions[4],permissions[5],permissions[6],isDeleted
+someUniqueId7,adminCompanyB1,admin,admin,6868433281e9d497130b31ae,createAnyUser,editAnyUser,deleteAnyUser,viewOrganizationUsers,createOrganizationUser,editOrganizationUser,assignBasicPermission,false
+someUniqueId8,userCompanyB1,user,user,someUniqueId7,viewAllData,editAllProfiles,deleteData,,,,,false
+someUniqueId9,userCompanyB21,user,user,someUniqueId7,viewAllData,editAllProfiles,deleteData,,,,,false
