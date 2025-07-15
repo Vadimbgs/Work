@@ -1,0 +1,94 @@
+```yaml
+users:
+  - _id: "6868433281e9d497130b31ae"  
+    name: "mainAdmin"                 
+    role: "mainAdmin"                 
+    workspace: "global"               
+    permissions:                      
+      - "viewAllUsers"                
+      - "createAnyUser"               
+      - "editAnyUser"                 
+      - "deleteAnyUser"               
+      - "assignAnyPermission"         
+    isDeleted: false                  
+    createdBy: "system"               
+    createdAt: "2025-07-08T10:00:00Z" 
+    updatedAt: "2025-07-08T10:00:00Z" 
+
+  - _id: "6868433281e9d497130b31af"
+    name: "adminTester"
+    role: "admin"
+    workspace: "adminTesterCabinet"  
+    parentId: "6868433281e9d497130b31ae" 
+    permissions:
+      - "viewWorkspaceUsers"          
+      - "createUserInWorkspace"      
+      - "editUserInWorkspace"         
+      - "deleteUserInWorkspace"      
+      - "assignBasicPermissionInWorkspace" 
+    isDeleted: false
+    createdBy: "mainAdmin"
+    createdAt: "2025-07-08T10:01:00Z"
+    updatedAt: "2025-07-08T10:01:00Z"
+
+  - _id: "6868433281e9d497130b31b0"
+    name: "userTester"
+    role: "user"
+    workspace: "userTesterCabinet"   
+    parentId: "6868433281e9d497130b31af" 
+    permissions:
+      - "viewOwnWorkspaceData"        
+      - "editOwnProfile"              
+    isDeleted: false
+    createdBy: "adminTester"
+    createdAt: "2025-07-08T10:02:00Z"
+    updatedAt: "2025-07-08T10:02:00Z"
+
+  - _id: "6868433281e9d497130b31b1"
+    name: "userTester1"
+    role: "user"
+    workspace: "userTester1Cabinet"   
+    parentId: "6868433281e9d497130b31af" 
+    permissions:
+      - "viewOwnWorkspaceData"        
+    isDeleted: false
+    createdBy: "adminTester"
+    createdAt: "2025-07-08T10:03:00Z"
+    updatedAt: "2025-07-08T10:03:00Z"
+
+settings:
+  indexes:                           
+    - key: { name: 1 }
+      unique: true                  
+    - key: { role: 1 }              
+    - key: { workspace: 1 }         
+    - key: { parentId: 1 }          
+  validation:                        
+    $jsonSchema:
+      bsonType: "object"
+      required: ["_id", "name", "role", "workspace", "permissions", "isDeleted", "createdBy", "createdAt", "updatedAt"]
+      properties:
+        _id:
+          bsonType: "string"         
+        name:
+          bsonType: "string"
+        role:
+          bsonType: "string"
+          enum: ["mainAdmin", "admin", "user"] 
+        workspace:
+          bsonType: "string"
+        parentId:
+          bsonType: ["string", "null"] 
+        permissions:
+          bsonType: "array"
+          items:
+            bsonType: "string"
+        isDeleted:
+          bsonType: "bool"
+        createdBy:
+          bsonType: "string"
+        createdAt:
+          bsonType: "string"          
+        updatedAt:
+          bsonType: "string"
+```
